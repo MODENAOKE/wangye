@@ -2,6 +2,27 @@
     margin: 0;
     padding: 0;
 }
+html{
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width:100%;
+    margin: 0;
+    padding: 0;
+    
+}
+.laoke{
+    width:150px;
+    height: 60%;
+    text-align: center;
+    font-family:youyuan;
+    font-size:25px;
+    position: relative;
+    padding:20px 0 0 0;
+    left:-20px;
+}
 .container {
     height: 100px;
     width: 800px;
@@ -33,18 +54,180 @@
 }
 .d1{
     background-color: #d4861d;
-    width: 100%;
+    width:100%;
+    
     height: 50px;
+    position:relative;
+}
+.d1 img{
+    position: absolute
+    width:3%;height:100%;
+    float:left;
 }
 .d2{
-            
+    position:relative;        
     width: 100%;
     height: 75px;
 }
 .d3{
+    position:relative; 
     background-color: antiquewhite;
     width: 100%;
     height: 8px;
+}
+.d4{
+    height:940px;
+    width:100%;
+    margin:0 0 40px 0;
+    padding:0;
+    position:relative;
+}
+.dz4{
+    height:940px;
+    width:80%;
+    margin:0px 10%;  
+    border-style: solid;
+    border-width: 0px 5px;
+    border-color: antiquewhite;
+    padding:20px 0;
+    position:relative;
+}
+.dz4 img{
+    height: 150px;
+    width:150px;
+    position: relative;
+    padding:25px
+    
+}
+.p1{
+    position:relative;
+    width:200px;
+    text-align: center;
+    top:-20px;
+    
+}
+.dzz4{
+    position:relative;
+    width:90%;
+    height:200px;
+    background-color: #e6d29b;
+    border:5px solid #ddab4d;
+    margin:20px 5%;
+        }
+.dzz4 img{
+    height: 150px;
+    width:150px;
+    position: relative;
+    padding:25px
+    
+}
+.dz44{
+    position: relative;
+    background-color: #c1c7c7;
+    height:45px;
+    font-family:youyuan;
+}
+
+.dz44 p{
+    font-size:25px;
+    padding:10px 0;
+}
+.d5{
+    height:1000px;
+    width:100%;
+    margin:0 0 40px 0;
+    padding:0;
+    position:relative;
+}
+.dz5{
+    height:980px;
+    width:90%;
+    margin:0px 5%;  
+    border-style: solid;
+    border-width: 0px 5px;
+    border-color: antiquewhite;
+    padding:30px 0;
+    position:relative;
+}
+.dzz5{
+    position:relative;
+    width:90%;
+    height:200px;
+    background-color: #e6d29b;
+    border:5px solid #ddab4d;
+    margin:20px 5%;
+        }
+.dzz5 img{
+    height: 150px;
+    width:150px;
+    position: relative;
+    padding:25px
+    
+}
+.dzz5 h1{
+    position: relative;
+    width:70%;
+    top:-180px;
+    left:200px;
+    font-size: 20px;
+        }
+.dzz5 p{
+    position:relative;
+    width:70%;
+    top:-160px;
+    left:200px;
+    font-size: 12px;
+        }
+.dzzz5{
+    position:relative;
+    width:70%;
+    top:-120px;
+    left:250px;
+    font-size: 15px;
+        }
+.dzz5a{
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+        }
+.dzzz6{
+    position:relative;
+    width:70%;
+    top:-120px;
+    left:180px;
+    font-size: 15px;
+    
+        }
+.dzzz6  span{
+          padding: 0  20px;  
+        }
+.dzzz7{
+    position:absolute;
+    width:20%;
+    bottom:40px;
+    right:0px;
+    font-size: 15px;
+    }
+
+.fanye{
+    display: inline-block;
+    cursor: pointer;
+    line-height: normal;
+    text-decoration: none;
+    padding: 5px 9px;
+    font-size: 12px;
+    background: #fff;
+    color: #666;
+    border: 1px solid #e6e6e6;
+        }
+.fanye1{
+    background: #fff;
+    color: #3e89fa;
+    border: 1px solid transparent;
+        }
+ a:visited {
+    text-decoration: none;
 }
 ul{
     list-style-type: none; /*移除默认设置*/
@@ -73,22 +256,9 @@ li a{
     margin:0;
     padding:0;
 }
-.d4{
-    height:1000px;
-    width:100%;
-    margin:0;
-    padding:1px;
-    position:absolute;
-}
-.dz4{
-    height:100%;
-    width:80%;
-    border-style: solid;
-    border-width: 0px 5px;
-    border-color: antiquewhite;
-    margin:-1px 150px;    
-}
-li.dropdown {
+
+.dropdown {
+  position: relative;
   display: inline-block;
 }
 
@@ -104,11 +274,11 @@ li.dropdown {
 
 .dropdown-content a {
   color: black;
-  padding:0;
+  padding:10px 0px 10px 0px;
   text-decoration: none;
   display: block;
   text-align: left;
-  margin:10px 0px 10px 0px;
+  margin:0;
  position: relative;
 }
 
