@@ -4,13 +4,14 @@
 }
 html{
     width:100%;
+    height:100%;
     margin: 0;
     padding: 0;
 }
 body{
     width:100%;
-    margin: 0;
-    padding: 0;
+    height: 100%;
+    font-weight: 500;
     
 }
 .laoke{
@@ -24,7 +25,7 @@ body{
     left:-20px;
 }
 .container {
-    height: 100px;
+    height: 15%;
     width: 800px;
     margin: 50px auto 0 auto;
 }
@@ -55,19 +56,20 @@ body{
 .d1{
     background-color: #d4861d;
     width:100%;
-    
-    height: 50px;
+    height: 6%;
     position:relative;
 }
 .d1 img{
     position: absolute
-    width:3%;height:100%;
+    width:3%;
+    height:100%;
     float:left;
 }
 .d2{
     position:relative;        
     width: 100%;
-    height: 75px;
+    height: 8%;
+    border-bottom: 8px solid antiquewhite;
 }
 .d3{
     position:relative; 
@@ -76,21 +78,18 @@ body{
     height: 8px;
 }
 .d4{
-    height:940px;
+    height:100%;
     width:100%;
-    margin:0 0 40px 0;
     padding:0;
-    position:relative;
+    position:absolute;
 }
 .dz4{
-    height:940px;
-    width:80%;
-    margin:0px 10%;  
-    border-style: solid;
-    border-width: 0px 5px;
-    border-color: antiquewhite;
-    padding:20px 0;
-    position:relative;
+    position:absolute;
+    left: 100px;
+    right: 100px;
+    height: 100%;
+    display: inline;
+    
 }
 .dz4 img{
     height: 150px;
@@ -108,11 +107,11 @@ body{
 }
 .dzz4{
     position:relative;
-    width:90%;
+    width:100%;
     height:200px;
     background-color: #e6d29b;
-    border:5px solid #ddab4d;
-    margin:20px 5%;
+    
+    margin:20px 0;
         }
 .dzz4 img{
     height: 150px;
@@ -133,29 +132,30 @@ body{
     padding:10px 0;
 }
 .d5{
-    height:1000px;
+    height:100%;
     width:100%;
     margin:0 0 40px 0;
     padding:;
     position:relative;
 }
 .dz5{
-    height:100%;
-    width:90%;
-    margin:0px 5%;  
-    border-style: solid;
+    
     border-width: 0px 5px;
     border-color: antiquewhite;
-    padding:20px 0px;
-    position:relative;
+    position:absolute;
+    left: 100px;
+    right: 100px;
+    height: 100%;
+    display: inline;
+    
 }
 .dzz5{
     position:relative;
-    width:90%;
+    width:100%;
     height:200px;
     background-color: #e6d29b;
-    border:5px solid #ddab4d;
-    margin:20px 5%;
+    margin:20px 0;
+    
         }
 .dzz5 img{
     height: 150px;
@@ -180,9 +180,9 @@ body{
         }
 .dzzo5{
     position:relative;
-    width:90%;
+    width:100%;
     height:200px;
-    margin:0px 5%;
+    
     padding: 0px;
         }
 .dzzo5 img{
@@ -192,6 +192,13 @@ body{
     padding:25px
     
 }
+.dzzo5 p{
+    position:relative;
+    width:70%;
+    top:-160px;
+    left:200px;
+    font-size: 12px;
+        }
 .dzzo5 h1{
     position: relative;
     width:70%;
@@ -246,7 +253,7 @@ body{
 .dzzoo5{
     position: absolute;
     right: 20px;
-    top:60px;
+    top:120px;
     width:60px;
     text-align: center;
     background-color: antiquewhite;
@@ -255,7 +262,7 @@ body{
 .dzzooo5{
     position: absolute;
     right: 20px;
-    top:100px;
+    top:160px;
     width:60px;
     text-align: center;
     background-color: antiquewhite;
@@ -388,4 +395,17 @@ li a{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+.dz4r,.dz4l{
+    width: 100px;
+    display: inline;
+    height: 150%;
+}
+.dz4l{
+    float: left;
+    border-right: 5px solid antiquewhite;
+}
+.dz4r{
+    float: right;
+    border-left: 5px solid antiquewhite;
 }
