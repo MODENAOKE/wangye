@@ -8,13 +8,15 @@
     <!-- 引入组件库 -->
     <script src="https://unpkg.com/element-ui/lib/index.js"></script>
     <link rel="stylesheet" href="./css/shouye.css">
+    <script src="./jquery-3.2.1.js"></script>
+    <script src="./js/hh.js"></script>
     <style>
 
 
     </style>
     
 </head>
-<body>
+<body onload="gopage(1,4)">
 <div class="d1">
     <img src="./tu/shu1.png">
     <p class="laoke">唠嗑</p>
@@ -76,16 +78,14 @@
             <img >
         </div>
         
-        <div class="dzz5a"> 
-        <a class="fanye">首页</a>
-        <a class="fanye">上一页</a>
-        <span class="fanye1">1</span>
-        <a class="fanye">2</a>
-        <a class="fanye">3</a>
-        <a class="fanye">4</a>
-        <a class="fanye">...</a>
-        <a class="fanye">下一页</a>
-        <a class="fanye">尾页</a>
+        <div class="dzz5a">
+        <a id="bar1" ></a>
+        <a id="bar2" ></a>
+        <a id="barcon1" class="fanye"></a>
+        <p class="fanye" class="fanye">/</p>
+        <a id="barcon2" class="fanye"></a>
+        <a id="bar3" ></a>
+        <a id="bar4" ></a>
         </div>
     </div>
     <div class="dz4r"></div>

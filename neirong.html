@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
     <!-- 引入组件库 -->
     <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="./jquery-3.2.1.js"></script>
+    <script src="./js/hh.js"></script>
     <link rel="stylesheet" href="./css/shouye.css">
     <style>
 
@@ -21,9 +23,9 @@
             border:2px solid ;
             width:90%;
             text-align: center;
-            padding: 0;
+            padding: 5px 2px;
             top:10px;
-            
+            height:30px;
             border-radius: 15px;
         }
         .dz62{
@@ -38,10 +40,11 @@
             position:relative;
             text-decoration: none;
             width:90%;
+            height:30px;
             margin:0 0 5px 0;
             border:2px solid ;
             border-radius: 15px;
-            padding: :0 20px;
+            padding:5px 2px;
             text-align: center;
             
         }
@@ -58,11 +61,12 @@
             display: inline;
             height: 160%;
             float: left;
-            border-right: 5px solid antiquewhite;
+            
         }
     </style>
+
 </head>
-<body>
+<body id="oo" onload="gopageo(1,4)">
 <div class="d1">
     <img src="./tu/shu1.png">
     <p class="laoke">唠嗑</p>
@@ -97,48 +101,141 @@
 </div>
 <div class="d6">
   <div class="dz6l">
-          <div class="dz61">分类</div>
-    <div class="dz62">
-        <a>ARCGIS</a>
-        <a>ENVI</a>
-        <a>C#</a>
-        <a>cityengien</a>
-        <a>GPS</a>
-        <a>HTML</a>
-        <a>sqlserver</a>
-        <a>other</a>
+    <div class="dz61" id="ay" onclick="gopageo(1,4)">全部</div>
+    <div class="dz62" id="sxx" >
+        <a class="ll" id="a1" onclick="gopage1(1,4)" >ARCGIS</a>
+        <a class="ll" id="a2" onclick="gopage2(1,4)">ENVI</a>
+        <a class="ll" id="a3" onclick="gopage3(1,4)">C#</a>
+        <a class="ll" id="a4" onclick="gopage4(1,4)">cityengien</a>
+        <a class="ll" id="a5" onclick="gopage5(1,4)">sqlserver</a>
+        <a class="ll" id="a6" onclick="gopage6(1,4)">other</a>
     </div>
   </div>
-   <div class="d7">
-            <div class="dzz5">
+   <div class="d7" >
+            <div class="dzz5 gis" >
             <img >
-            <h1>ArcGIS从入门到入土</h1>
-            <p>都说了入土都说了入土都说了入土都说了入土都说了入土都说了入土都说了入土都说了入土都说了入土都说了入土都说了入土都说了入土都说了入土都说了入土都说了入土都说了入土都说了入土都说了入土都说了入土都说了入土</p>
+            <h1>ArcGIS10.2安装教程</h1>
+            <p>GIS软件的安装过程稍微有些麻烦，一不小心可能安装不上，今天我们就来聊聊在Windows10系统上安装ArcGIS10.x吧!</p>
             <div class="dzzz5">
                 <img src="./tu/shu3.png" style="position:absolute;width:50px;height:50px;left:-80px;top:-45px">
-                <span>关注：</span>
-                <span>666</span>
-                <span>帖子：</span>
-                <span>999</span>
+                
             </div>
         </div>
-        <div class="dzz5">
+        <div class="dzz5 gis" >
             <img>
+            <h1>ArcGIS的坐标系统</h1>
+            <p>上手的第一个“拦路虎”就是坐标系，很多人对坐标系的概念理解方面和实际操作方面不太清楚，对于有些学规划的小伙伴简直就是噩梦啊！</p>
+            <div class="dzzz5">
+                <img src="./tu/shu3.png" style="position:absolute;width:50px;height:50px;left:-80px;top:-45px">
+                
+            </div>
         </div>
-        <div class="dzz5">
+        <div class="dzz5 gis" >
             <img >
+            <h1>ArcGIS的矢量栅格转换</h1>
+            <p>下面我就讲一下用ArcGIS实现矢量数据与栅格数据的相互转化。</p>
+            <div class="dzzz5">
+                <img src="./tu/shu3.png" style="position:absolute;width:50px;height:50px;left:-80px;top:-45px">
+                
+            </div>
         </div>
-        <div class="dzz5">
+        <div class="dzz5 gis" >
             <img >
+            <h1>ArcGIS的制图表达</h1>
+            <p>如何制作一幅突出显示地理要素表达的精美的地图。</p>
+            <div class="dzzz5">
+                <img src="./tu/shu3.png" style="position:absolute;width:50px;height:50px;left:-80px;top:-45px">
+                
+            </div>
         </div>
-        <div class="dzz5">
+        <div class="dzz5 envi" >
             <img >
+            <h1>ENVI不同的图像融合方法的效果区别</h1>
+            <p>图像融合的方法可以增强图像显示效果。</p>
+            <div class="dzzz5">
+                <img src="./tu/shu3.png" style="position:absolute;width:50px;height:50px;left:-80px;top:-45px">
+                
+            </div>
         </div>
-
+        <div class="dzz5 envi" >
+            <img >
+            <h1>ENVI入门教程—图像分类后处理</h1>
+            <p>分类后处理小图斑对影像呈现的结果更加明显。</p>
+            <div class="dzzz5">
+                <img src="./tu/shu3.png" style="position:absolute;width:50px;height:50px;left:-80px;top:-45px">
+                
+            </div>
+        </div>
+                <div class="dzz5 envi" >
+            <img >
+            <h1>ENVI实验教程—遥感图像增强</h1>
+            <p>掌握空间域、辐射域、光谱域增强的原理与方法步骤。</p>
+            <div class="dzzz5">
+                <img src="./tu/shu3.png" style="position:absolute;width:50px;height:50px;left:-80px;top:-45px">
+                
+            </div>
+        </div>
+                <div class="dzz5 envi" >
+            <img >
+            <h1>ENVI使用教程之直方图</h1>
+            <p>图像融合的方法可以增强图像显示效果。</p>
+            <div class="dzzz5">
+                <img src="./tu/shu3.png" style="position:absolute;width:50px;height:50px;left:-80px;top:-45px">
+                
+            </div>
+        </div>
+                <div class="dzz5 envi" >
+            <img >
+            <h1>ENVI不同的图像融合方法的效果区别</h1>
+            <p>直方图一直是直观的表达方式，很清楚的告诉你图像在空间域的分布，从抽象到具体，对图像的处理有很大的帮助。</p>
+            <div class="dzzz5">
+                <img src="./tu/shu3.png" style="position:absolute;width:50px;height:50px;left:-80px;top:-45px">
+                
+            </div>
+        </div>
+        <div class="dzz5 envi" >
+            <img >
+            <h1>ENVI的NDVI计算</h1>
+            <p>envi提供ndvi归一化植被指数计算。</p>
+            <div class="dzzz5">
+                <img src="./tu/shu3.png" style="position:absolute;width:50px;height:50px;left:-80px;top:-45px">
+                
+            </div>
+        </div>
+        <div class="dzz5 c" >
+            <img >
+            <h1>C#是干什么的？</h1>
+            <p>与常见的基本数据类型 C#(英文名为 CSharp) 是微软开发的一种面向对象的编程语言。</p>
+            <div class="dzzz5">
+                <img src="./tu/shu3.png" style="position:absolute;width:50px;height:50px;left:-80px;top:-45px">
+                
+            </div>
+        </div>
+        <div class="dzz5 cityengine" >
+            <img >
+            <h1>CityEngine中的基于规则建模</h1>
+            <p>CGA是计算机生成模型的缩写。</p>
+            <div class="dzzz5">
+                <img src="./tu/shu3.png" style="position:absolute;width:50px;height:50px;left:-80px;top:-45px">
+                
+            </div>
+        </div>
+        <div class="dzz5a">
+        <a id="bar1" ></a>
+        <a id="bar2" ></a>
+        <a id="barcon1" class="fanye"></a>
+        <p class="fanye" class="fanye">/</p>
+        <a id="barcon2" class="fanye"></a>
+        <a id="bar3" ></a>
+        <a id="bar4" ></a>
+        </div>
+    </div>
    </div>
 
     
-</div>
 
+<script>
+
+</script>
 </body>
 </html>
